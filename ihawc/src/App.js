@@ -1,5 +1,4 @@
 import React from 'react'
-// import axios from 'axios'
 
 import './App.css'
 import SocialFollow from "./SocialFollow"
@@ -8,7 +7,6 @@ class App extends React.Component {
     state = { advice: '' }
 
     render() {
-        const { advice } = this.state ;
         return (
             <div>
             <div className="app">

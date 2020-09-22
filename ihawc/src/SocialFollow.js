@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
     faLinkedin,
-    faTwitter,
-    faGithub,
-    faMedium
+    faGithub
   } from "@fortawesome/free-brands-svg-icons";
 
 export default function SocialFollow() {
