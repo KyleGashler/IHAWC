@@ -2,7 +2,8 @@
   "name": "IHAWC",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ihawc.org",
+  "baseURL": "https://ihawc.org",
+  "homepage": "http://kylegashler.github.io/IHAWC",
   "dependencies": {
     "-": "0.0.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
