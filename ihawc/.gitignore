@@ -26,6 +26,8 @@ pids
 *.pid
 *.seed
 
+build
+
 # Generated coverage
 lib-cov
 coverage
