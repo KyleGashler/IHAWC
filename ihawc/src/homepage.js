@@ -96,11 +96,17 @@ class DesktopContainer extends Component {
               inverted={!fixed}
               pointing={!fixed}
               secondary={!fixed}
-              size='small'
+              size='large'
             >
               <Container>
                 <Menu.Item as='a' active>
-                <Image width='50%' height='50%' size='small' src={logo} />
+                Home
+                </Menu.Item>
+                <Menu.Item as='a' active>
+                About
+                </Menu.Item>
+                <Menu.Item as='a' active>
+                Contact
                 </Menu.Item>
               </Container>
             </Menu>
@@ -143,9 +149,9 @@ class MobileContainer extends Component {
             <Menu.Item as='a' active>
               Home
             </Menu.Item>
-            <Menu.Item as='a'>About Us</Menu.Item>
-            <Menu.Item as='a'>Donate</Menu.Item>
-            <Menu.Item as='a'>Info</Menu.Item>
+            <Menu.Item as='a'>Home</Menu.Item>
+            <Menu.Item as='a'>About</Menu.Item>
+            <Menu.Item as='a'>Contact</Menu.Item>
           </Sidebar>
 
           <Sidebar.Pusher dimmed={sidebarOpened}>
