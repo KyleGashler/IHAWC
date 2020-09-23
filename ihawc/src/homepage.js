@@ -19,6 +19,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
+import logo from './logo.png'
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -36,7 +37,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='IHAWC'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -47,7 +48,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content='Indigenous Health and Wellness Connections'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -55,10 +56,6 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Button primary size='huge'>
-      Get Started
-      <Icon name='right arrow' />
-    </Button>
   </Container>
 )
 
@@ -98,22 +95,11 @@ class DesktopContainer extends Component {
               inverted={!fixed}
               pointing={!fixed}
               secondary={!fixed}
-              size='large'
+              size='small'
             >
               <Container>
                 <Menu.Item as='a' active>
-                  Home
-                </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
+                <Image width='50%' height='50%' size='small' src={logo} />
                 </Menu.Item>
               </Container>
             </Menu>
@@ -156,11 +142,9 @@ class MobileContainer extends Component {
             <Menu.Item as='a' active>
               Home
             </Menu.Item>
-            <Menu.Item as='a'>Work</Menu.Item>
-            <Menu.Item as='a'>Company</Menu.Item>
-            <Menu.Item as='a'>Careers</Menu.Item>
-            <Menu.Item as='a'>Log in</Menu.Item>
-            <Menu.Item as='a'>Sign Up</Menu.Item>
+            <Menu.Item as='a'>About Us</Menu.Item>
+            <Menu.Item as='a'>Donate</Menu.Item>
+            <Menu.Item as='a'>Info</Menu.Item>
           </Sidebar>
 
           <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -174,14 +158,6 @@ class MobileContainer extends Component {
                 <Menu inverted pointing secondary size='large'>
                   <Menu.Item onClick={this.handleToggle}>
                     <Icon name='sidebar' />
-                  </Menu.Item>
-                  <Menu.Item position='right'>
-                    <Button as='a' inverted>
-                      Log in
-                    </Button>
-                    <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                      Sign Up
-                    </Button>
                   </Menu.Item>
                 </Menu>
               </Container>
@@ -237,12 +213,7 @@ const HomepageLayout = () => (
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='/images/wireframe/white-image.png' />
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
+            <Image bordered rounded size='large' src={logo} />
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -262,7 +233,7 @@ const HomepageLayout = () => (
               "I shouldn't have gone with their competitor."
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
+              <Image avatar src={logo} />
               <b>Nan</b> Chief Fun Officer Acme Toys
             </p>
           </Grid.Column>
@@ -316,7 +287,6 @@ const HomepageLayout = () => (
               <List link inverted>
                 <List.Item as='a'>Sitemap</List.Item>
                 <List.Item as='a'>Contact Us</List.Item>
-                <List.Item as='a'>Religious Ceremonies</List.Item>
                 <List.Item as='a'>Gazebo Plans</List.Item>
               </List>
             </Grid.Column>
@@ -324,17 +294,15 @@ const HomepageLayout = () => (
               <Header inverted as='h4' content='Services' />
               <List link inverted>
                 <List.Item as='a'>Banana Pre-Order</List.Item>
-                <List.Item as='a'>DNA FAQ</List.Item>
                 <List.Item as='a'>How To Access</List.Item>
-                <List.Item as='a'>Favorite X-Men</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
               <Header as='h4' inverted>
-                Footer Header
+                IHAWC
               </Header>
               <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
+                Serving one Community at a time.
               </p>
             </Grid.Column>
           </Grid.Row>
