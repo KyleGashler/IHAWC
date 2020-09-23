@@ -20,6 +20,7 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 import logo from './logo.png'
+import SocialFollow from "./SocialFollow"
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -301,9 +302,7 @@ const HomepageLayout = () => (
               <Header as='h4' inverted>
                 IHAWC
               </Header>
-              <p>
-                Serving one Community at a time.
-              </p>
+              <SocialFollow/>
             </Grid.Column>
           </Grid.Row>
         </Grid>
