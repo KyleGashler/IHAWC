@@ -2,7 +2,6 @@
   "name": "ihawc",
   "version": "0.1.0",
   "private": true,
-  "baseURL": "https://ihawc.org",
   "homepage": "http://kylegashler.github.io/IHAWC",
   "dependencies": {
     "-": "0.0.1",
