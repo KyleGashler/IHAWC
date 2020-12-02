@@ -1053,7 +1053,7 @@ section {
 
 .team .member .pic {
   overflow: hidden;
-  width: 180px;
+  width: 500%;
   border-radius: 50%;
 }
 
