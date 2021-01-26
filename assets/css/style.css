@@ -111,8 +111,8 @@ h6 {
   background-size: 100%;
 }
 
-#header-wrapper {
-  
+.donation-image {
+  width: 70%;
 }
 
 #header.header-scrolled,
@@ -162,7 +162,7 @@ h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #fff;
+  color: black;
   transition: 0.3s;
   font-size: 15px;
   letter-spacing: 0.5px;
@@ -394,6 +394,55 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+#hero-donation {
+  width: 100%;
+  height: 110vh;
+  background: #37517e;
+}
+
+.payment-btns{
+  margin: 100px, 100px;
+}
+
+#hero-donation .container {
+  padding-top: 55px;
+}
+
+#hero-donation h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero-donation h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#hero-donation .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  background: #47b2e4;
+}
+
+#hero .btn-get-started:hover {
+  background: #209dd8;
+}
+
+
+
 #hero {
   width: 100%;
   height: 80vh;
@@ -436,28 +485,6 @@ h6 {
   background: #209dd8;
 }
 
-#hero .btn-watch-video {
-  font-size: 16px;
-  display: inline-block;
-  padding: 10px 0 8px 40px;
-  transition: 0.5s;
-  margin: 10px 0 0 25px;
-  color: #fff;
-  position: relative;
-}
-
-#hero .btn-watch-video i {
-  color: #fff;
-  font-size: 32px;
-  position: absolute;
-  left: 0;
-  top: 7px;
-  transition: 0.3s;
-}
-
-#hero .btn-watch-video:hover i {
-  color: #47b2e4;
-}
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -1882,4 +1909,18 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+.donate-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display:inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
 }
