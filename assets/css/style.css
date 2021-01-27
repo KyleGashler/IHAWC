@@ -490,6 +490,11 @@ h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+#hero .hero-img img {
+  width: 90%;
+}
+
+
 @media (max-width: 991px) {
   #hero {
     height: 100vh;
@@ -503,7 +508,7 @@ h6 {
     text-align: center;
   }
   #hero .hero-img img {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -518,13 +523,13 @@ h6 {
     margin-bottom: 30px;
   }
   #hero .hero-img img {
-    width: 70%;
+    width: 60%;
   }
 }
 
 @media (max-width: 575px) {
   #hero .hero-img img {
-    width: 80%;
+    width: 70%;
   }
   #hero .btn-get-started {
     font-size: 16px;
@@ -1725,60 +1730,9 @@ section {
 #footer {
   font-size: 14px;
   background: #37517e;
+  width: 100%;
 }
 
-#footer .footer-newsletter {
-  padding: 50px 0;
-  background: #f3f5fa;
-  text-align: center;
-  font-size: 15px;
-  color: #444444;
-}
-
-#footer .footer-newsletter h4 {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 600;
-  color: #37517e;
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
-  text-align: left;
-}
-
-#footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #47b2e4;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type="submit"]:hover {
-  background: #209dd8;
-}
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
@@ -1878,9 +1832,11 @@ section {
 #footer .footer-bottom {
   background: 
   url("../img/footercolor.png") center center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-size: 100%;
+  padding-top: 3px;
+  padding-bottom: 100px;
   color: #fff;
+  width: 100%;
 }
 
 #footer .copyright {
@@ -1909,18 +1865,4 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
-}
-
-.donate-btn {
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display:inline-block;
-  padding: 12px 40px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
 }
